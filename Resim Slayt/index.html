@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Resim Galerisi</title>
+
+    <style type="text/css">
+        body{
+            background-color: #4F4D4D;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1{
+            color: aquamarine;
+        }
+        .cerceve{
+            width: 80%;
+            overflow: hidden;
+            border: 4px solid #323232;
+            box-sizing: border-box;
+        }
+        .galeri{
+            position:  relative;
+            width: 400%;
+            left: 0;
+            animation: 16s slayt infinite;
+        }
+        .galeri img{
+            width: 25%;
+            float: left;
+        }
+        @keyframes slayt{
+            0%{left: 0%;}
+            20%{left: 0%;}
+            25%{left: -100%;}
+            45%{left: -100%;}
+            50%{left: -200%;}
+            70%{left: -200%;}
+            75%{left: -300%;}
+            90%{left: -300%;}
+            
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Resim Slayt Galerisi</h1>
+    <div class="cerceve">
+        <div class="galeri">
+            <img src="1.jpg">
+            <img src="2.jpg">
+            <img src="3.jpg">
+            <img src="4.jpg">
+            
+            
+
+        </div>
+    </div>
+</body>
+</html>
